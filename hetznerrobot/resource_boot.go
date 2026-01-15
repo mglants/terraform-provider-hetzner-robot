@@ -88,7 +88,7 @@ func resourceBootImportState(ctx context.Context, d *schema.ResourceData, meta i
 	d.Set("language", boot.Language)
 	d.Set("operating_system", boot.OperatingSystem)
 	d.Set("password", boot.Password)
-	d.Set("server_id", serverNumber)
+	d.Set("server_number", serverNumber)
 
 	results := make([]*schema.ResourceData, 1)
 	results[0] = d
